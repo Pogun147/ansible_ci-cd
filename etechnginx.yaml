@@ -1,5 +1,6 @@
 - name: Configure webserver with nginx
   hosts: all
+  become_user: jenkins
   become: True
   tasks:
     - name: install nginx
